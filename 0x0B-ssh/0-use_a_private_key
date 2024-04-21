@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Define the server address and user
+SERVER="100.26.142.254"
+USER="ubuntu"
+
+# Define the private key to use for SSH connection
+KEY="~/.ssh/school"
+
+# Using ssh to connect to your server
+ssh -i "$KEY" "$USER@$SERVER"
